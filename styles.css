@@ -17,6 +17,9 @@
   --fire: #ff6d00;
   --electric: #64d3ff;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
 
 * {
   margin: 0;
@@ -29,13 +32,14 @@
 /* header */
 
 header {
-  background: var(--secondary);
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 65px;
   padding: 0px 30px;
+  position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -62,5 +66,102 @@ header {
 
 .navbar-list a {
   color: var(--text-gray);
-  font-size: 12px;
+  font-size: 13px;
+}
+
+.navbar-list li:first-child > a {
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.cart_icon {
+  font-weight: 600;
+  border-radius: 10px;
+  height: 44px;
+  padding: 10px 15px;
+  margin-right: 1rem;
+  color: var(--text-white);
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+main {
+  background-color: var(--nav-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #adb9c7;
+  width: 100%;
+}
+#hero {
+  background-image: url(fondo_auto/pexels-akbar-nemati-7530997.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 65px;
+  padding: 70px 0px;
+  width: 100%;
+  height: calc(100vh - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.hero_info h1 {
+  font-size: 48px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color: var(--background);
+}
+.hero_info p {
+  font-size: 14px;
+  width: 70%;
+  color: var(--btn-bg);
+}
+
+.hero_info a {
+  color: var(--text-white);
+  background-color: #1e50ff;
+  width: 120px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero_card {
+  width: 300px;
+
+  padding: 20px;
+  border-radius: 15px;
+  justify-content: center;
+}
+.hero_card img {
+  height: 250px;
+  border-radius: 15px;
+  padding: 4px 8px;
+}
+.hero_container {
+  width: 300px;
+  display: flex;
+  gap: 1rem;
+}
+.hero_content {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  width: 65%;
+  padding: 25px 0px;
 }
