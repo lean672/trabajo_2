@@ -37,10 +37,11 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 65px;
-  padding: 0px 30px;
+  padding: 0px 0px;
   position: fixed;
   top: 0;
   background-color: #0f1525;
+  z-index: 10000;
 }
 
 .logo {
@@ -64,10 +65,16 @@ header {
 .navbar-list {
   gap: 30px;
 }
-
+.navbar-list li:hover {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(-3deg) scale(1.04);
+}
+.navbar-list {
+  transition: all 0.3s ease-in-out;
+}
 .navbar-list a {
   color: var(--text-gray);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .navbar-list li:first-child > a {
@@ -94,6 +101,7 @@ main {
   justify-content: center;
   color: #adb9c7;
   width: 100%;
+  height: auto;
 }
 #hero {
   background-image: url(fondo_auto/pexels-akbar-nemati-7530997.jpg);
@@ -119,13 +127,13 @@ main {
   width: 80%;
   min-width: 500px;
   font-weight: 800;
-  color: var(--background);
+  color: var(--text-white);
 }
 .hero_info p {
-  font-size: 17px;
+  font-size: 23px;
   width: 70%;
-  color: var(--btn-bg);
-  font-family: "Wallpoet", cursive;
+  color: var(--electric);
+  font-family: "Kameron", serif;
 }
 
 .hero_info h2 {
@@ -144,13 +152,15 @@ main {
 }
 
 .hero_card {
-  width: 300px;
+  width: 450px;
+  height: 450px;
   padding: 20px;
   border-radius: 15px;
   justify-content: center;
 }
 .hero_card img {
-  height: 250px;
+  height: 100%;
+  width: 100%;
   border-radius: 15px;
   padding: 4px 8px;
 }
@@ -158,13 +168,18 @@ main {
   width: 300px;
   display: flex;
   gap: 1rem;
+  transition: all 0.3s ease-in-out;
 }
+.hero_container a:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(5px) scale(1.04);
+}
+
 .hero_content {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
   display: flex;
   border-radius: 15px;
   justify-content: center;
@@ -197,18 +212,25 @@ main {
   width: 50px;
   border-radius: 25px;
 }
-.info_cards {
+.info_cards_container .info_cards {
   width: 300px;
   height: 400px;
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
   background: var(--secondary);
   gap: 20px;
   border-radius: 9px;
 }
+.info_cards ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
 .info_cards h3 {
   font-weight: 600;
   font-size: 18px;
@@ -253,7 +275,9 @@ footer span {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
+
 .servicios_especiales {
   background: rgba(10, 77, 144, 0.25);
   box-shadow: 0 8px 32px 0 rgba(7, 22, 222, 0.37);
@@ -263,41 +287,51 @@ footer span {
   display: flex;
   border-radius: 15px;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 65%;
   padding: 25px 0px;
+  flex-direction: column;
+  height: auto;
+  gap: 20px;
 }
 
 .info_productos img {
   width: 700px;
-  display: flex;
-  align-items: flex-start;
-  width: 700px;
   padding: 20px;
   border-radius: 15px;
-  justify-content: center;
   height: 500px;
-  border-radius: 15px;
   padding: 4px 8px;
+  object-fit: cover;
 }
-.service_info li {
+.service_info p {
   font-size: 20px;
-  width: 65%;
   color: var(--bg-azul-10);
   font-family: "Wallpoet", cursive;
   padding-left: 30px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   padding-bottom: 20px;
 }
 .titulo {
-  font-size: 48px;
-  width: 80%;
-  min-width: 500px;
-  font-weight: 800;
-  color: var(--bg-azul-10);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 900;
+  text-shadow: rgb(11, 44, 235) 1px 0px 0px,
+    rgb(11, 44, 235) 0.540302px 0.841471px 0px,
+    rgb(11, 44, 235) -0.416147px 0.909297px 0px,
+    rgb(11, 44, 235) -0.989992px 0.14112px 0px,
+    rgb(11, 44, 235) -0.653644px -0.756802px 0px,
+    rgb(11, 44, 235) 0.283662px -0.958924px 0px,
+    rgb(11, 44, 235) 0.96017px -0.279415px 0px;
+  font-size: 42px;
+  color: var(--text-white);
+}
+.info_servicios {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+.service_info {
+  width: auto;
 }
