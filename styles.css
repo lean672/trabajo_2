@@ -126,10 +126,11 @@ main {
   width: 70%;
   color: var(--btn-bg);
   font-family: "Wallpoet", cursive;
-  text-align: center;
 }
+
 .hero_info h2 {
-  padding-left: 47px;
+  display: flex;
+  text-align: center;
 }
 
 .hero_info a {
@@ -216,4 +217,87 @@ main {
   font-size: 14px;
   font-weight: 200;
   color: var(--text-gray);
+}
+footer {
+  background: var(--background);
+  color: var(--bg-azul-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0;
+}
+footer a,
+footer p {
+  color: var(--text-gray);
+  font-weight: 300;
+  font-size: 14px;
+}
+footer span {
+  font-weight: 800;
+}
+.footer_link {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#productos {
+  background-size: cover;
+  background-position: center;
+  margin-top: 65px;
+  padding: 70px 0px;
+  width: 100%;
+  height: calc(100vh - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicios_especiales {
+  background: rgba(10, 77, 144, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(7, 22, 222, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  padding: 25px 0px;
+}
+
+.info_productos img {
+  width: 700px;
+  display: flex;
+  align-items: flex-start;
+  width: 700px;
+  padding: 20px;
+  border-radius: 15px;
+  justify-content: center;
+  height: 500px;
+  border-radius: 15px;
+  padding: 4px 8px;
+}
+.service_info li {
+  font-size: 20px;
+  width: 65%;
+  color: var(--bg-azul-10);
+  font-family: "Wallpoet", cursive;
+  padding-left: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+.titulo {
+  font-size: 48px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color: var(--bg-azul-10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
