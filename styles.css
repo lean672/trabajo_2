@@ -150,8 +150,10 @@ main {
 }
 
 .hero_info a {
-  color: var(--text-white);
-  background-color: #1e50ff;
+  color: var(--background);
+  font-weight: 500;
+  background: #ff6e42;
+  background: linear-gradient(to top right, #ff6e42 30%, #ffff05 100%);
   width: 120px;
   padding: 8px 0px;
   border-radius: 10px;
