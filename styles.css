@@ -16,6 +16,7 @@
   /* decoration */
   --fire: #ff6d00;
   --electric: #64d3ff;
+  --color-gradient: linear-gradient(to top right, #ff6e42 30%, #ffff05 100%);
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -106,7 +107,7 @@ main {
   height: auto;
 }
 #hero {
-  background-image: url(fondo_auto/pexels-akbar-nemati-7530997.jpg);
+  background-image: url(fondo_auto/pexels-natasha-filippovskaya-4665711.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -127,18 +128,20 @@ main {
   width: 50%;
 }
 .hero_info h1 {
-  font-size: 48px;
+  font-size: 49px;
   width: 80%;
   min-width: 500px;
   font-weight: 800;
-  color: var(--text-white);
+  background: #ff6e42;
+  background: linear-gradient(to top right, #ff6e42 30%, #ffff05 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero_info p {
   font-size: 23px;
   width: 70%;
-  color: var(--electric);
+  color: var(--text-white);
   font-family: "Kameron", serif;
-  
 }
 
 .hero_info h2 {
@@ -169,7 +172,7 @@ main {
   border-radius: 15px;
   padding: 4px 8px;
 }
- .hero_container { 
+.hero_container {
   width: 300px;
   display: flex;
   gap: 1rem;
@@ -186,7 +189,7 @@ main {
   -webkit-backdrop-filter: blur(6px);
   display: flex;
   border-radius: 15px;
-  justify-content: center;  
+  justify-content: center;
   padding: 25px 10px;
   width: 1000px;
 }
@@ -329,7 +332,6 @@ footer span {
     rgb(11, 44, 235) 0.96017px -0.279415px 0px;
   font-size: 42px;
   color: var(--text-white);
-  
 }
 .info_servicios {
   display: flex;
@@ -341,14 +343,11 @@ footer span {
 .service_info {
   width: auto;
 }
-.marca{
-display: flex;
-justify-content: space-around;
-align-items: center;
-
+.marca {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.marca img{
+.marca img {
   width: 115px;
 }
-
-
