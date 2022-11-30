@@ -147,6 +147,7 @@ main {
 .hero_info h2 {
   display: flex;
   text-align: center;
+  font-size: 27px;
 }
 
 .hero_info a {
